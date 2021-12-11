@@ -2,6 +2,7 @@
 [![Stars](https://img.shields.io/github/stars/Mikotwa/DualGuard?label=Stars)](https://github.com/Mikotwa)
 [![Release](https://img.shields.io/github/v/release/Mikotwa/DualGuard?label=Release)](https://github.com/Mikotwa/DualGuard/releases/latest)
 [![Download](https://img.shields.io/github/downloads/Mikotwa/DualGuard/total)](https://github.com/Mikotwa/DualGuard/releases/latest)
+[![License](https://img.shields.io/github/license/Dr-TSNG/Hide-My-Applist?label=License)](https://choosealicense.com/licenses/gpl-3.0/)
 
 A simple xposed module that helps you use your AdGuard subscription in multiple (>3) devices.
 
