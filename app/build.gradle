@@ -10,8 +10,8 @@ android {
         applicationId "com.dualguard"
         minSdk 25
         targetSdk 31
-        versionCode 42
-        versionName "1.0"
+        versionCode 52
+        versionName "1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -1,12 +1,26 @@
 <resources>
-    <string name="app_name">DualGuard</string>
-    <string name="action_settings">关于</string>
+    <string name="app_name" translatable="false">DualGuard</string>
+    <string name="action_settings">About</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">DualGuard</string>
+    <string name="first_fragment_label" translatable="false">DualGuard</string>
+    <string name="first_fragment_enabled">Module is enabled</string>
+    <string name="first_fragment_disabled">Module is disabled</string>
+
+    <string name="main_first_use_notice_title">This is NOT a bypass for AdGuard subscription</string>
+    <string name="main_first_use_notice_text">This module is intended for those who have more than three devices.   It *won\'t* let you get AdGuard Premium for free. You are required to purchase a valid subscription before using this module.   By using this module, you agree that you use it only for personal and non-commercial usage.</string>
+    <string name="main_first_use_notice_agree">I agree</string>
+
+    <string name="about_slogan">About DualGuard</string>
+
+    <string name="about_module_intro_and_help_title">Introduction and Assistance</string>
+    <string name="about_module_intro_and_help_text">This module is designed to help those who have purchased an AdGuard Personal license but have just greater than three devices to use the advanced features. \n\nBy default, the Personal license of AdGuard allows only three devices to be activated. This module allows AdGuard on Android devices to ignore that limit. \n\nFirst of all, the module *can\'t and won\'t* help you get a Premium license for free. If you just want to hack AdGuard, then you\'ve come to the wrong place. If you already have a legitimate AdGuard license, then read on for instructions: \n1. Download, install AdGuard properly and activate the app with your license. \n2. Activate this module in LSPosed. \n3. Force stop + reopen AdGuard. \n\nEnjoy Premium access on all your devices!</string>
+
+    <string name="about_module_developer_title">Developers</string>
+    <!-- Strings below are intended for remove -->
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

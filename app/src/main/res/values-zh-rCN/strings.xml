@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">关于</string>
+    <string name="main_first_use_notice_title">该应用不是对 AdGuard 现有授权机制的“绕过”</string>
+    <string name="main_first_use_notice_text">该应用的目的旨在让个人授权用户在拥有多于三台设备的情况下仍能享受到高级版 AdGuard 的授权待遇\n\n该应用 *不会* 让你免费获得 AdGuard 的高级授权。您原则上仍然需要购买正版授权后才能使用高级权益\n\n您同意仅将该应用作为上述且个人非营利的用途</string>
+    <string name="main_first_use_notice_agree">我同意</string>
+    <string name="about_slogan">关于 DualGuard</string>
+    <string name="about_module_intro_and_help_title">简介与帮助</string>
+    <string name="about_module_developer_title">开发者</string>
+    <string name="about_module_intro_and_help_text">该模块旨在帮助那些购买了 AdGuard 个人版授权，却又拥有刚好大于三台设备的人使用高级特性。\n\n默认情况下，AdGuard 的个人版授权仅允许激活三台设备。该模块可以让 Android 设备上的 AdGuard 无视该授权限制。\n\n首先，该模块 *不能，也不会* 免费帮你获得高级版授权。如果你只是想要破解 AdGuard，那么你来错地方了。\n\n如果你已经拥有合法的 AdGuard 授权，那么请继续阅读使用方法：\n1. 下载，安装 AdGuard 本体，并使用你的授权许可激活应用\n2. 在 LSPosed 里激活该模块\n3. 强行停止 + 重开 AdGuard\n\n在所有设备上享受高级版权限吧！</string>
+    <string name="first_fragment_enabled">模块已生效</string>
+    <string name="first_fragment_disabled">模块未生效</string>
+</resources>

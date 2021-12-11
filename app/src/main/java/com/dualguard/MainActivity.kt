@@ -11,6 +11,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import com.afollestad.materialdialogs.MaterialDialog
 import com.dualguard.databinding.ActivityMainBinding
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    private fun isModuleActivated(): Boolean {
+        return false
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -28,18 +33,18 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
+        var text = findViewById<TextView>(R.id.textview_first)
+        if (isModuleActivated()) text.setText(R.string.first_fragment_enabled)
+        else text.setText(R.string.first_fragment_disabled)
+
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         MaterialDialog(this).show {
-            title(text = "该应用不是对 AdGuard 现有授权机制的“绕过”")
-            message(text = "该应用的目的旨在让个人授权用户在拥有多于三台设备的情况下仍能享受到高级版 AdGuard 的授权待遇"
-                    + "\n\n"
-                    + "该应用 *不会* 让你免费获得 AdGuard 的高级授权。您原则上仍然需要购买正版授权后才能使用高级权益"
-                    + "\n\n"
-                    + "您同意仅将该应用作为上述且个人非营利的用途")
-            positiveButton(text = "我明白")
+            title(R.string.main_first_use_notice_title)
+            message(R.string.main_first_use_notice_text)
+            positiveButton(R.string.main_first_use_notice_agree)
         }
 
         binding.fab.setOnClickListener { view ->

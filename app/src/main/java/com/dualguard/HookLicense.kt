@@ -3,6 +3,7 @@ package com.dualguard
 import android.util.Log
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.*
+
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.IXposedHookZygoteInit
 import de.robv.android.xposed.XC_MethodHook
@@ -40,6 +41,19 @@ class HookLicense : IXposedHookZygoteInit, IXposedHookLoadPackage {
                         after { param ->
                             Log.d("DualGuard", "Now hooking method: " + param.method.name);
                             param.result = MobileStatus.PREMIUM
+                        }
+                    }
+                }
+
+                "com.dualguard" -> {
+                    val clazz = lpparam.classLoader.loadClass("com.dualguard.MainActivity")
+
+                    findAllMethods(clazz) {
+                        name == "isModuleActivated"
+                    }.hookMethod {
+                        after { param ->
+                            Log.d("DualGuard", "Now hooking method: " + param.method.name);
+                            param.result = true
                         }
                     }
                 }
